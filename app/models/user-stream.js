@@ -27,15 +27,3 @@ export default class UserStream {
     });
   }
 }
-
-// const UserStream = Resource(resource => {
-//   let revision = 0;
-
-//   resource.on.setup(() => {
-//     const interval = setInterval(() => {
-//       callback(`@johndoe ${UserStream.#revision++}`);
-//     }, 1000);
-
-//     return () => clearInterval(interval);
-//   });
-// });
